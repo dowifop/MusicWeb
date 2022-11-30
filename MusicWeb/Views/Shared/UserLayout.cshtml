@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/UserStyle.css" rel="stylesheet" />
+  
+</head>
+<body>
+   
+   
+    <div class="banner">
+        <div class="navbar">
+            <img src="~/Content/images/logomain2.png" class="logo" />
+            <ul>
+                <li><a href="/Users/Dangkitk"><span class="glyphicon glyphicon-user">Sign Up</span></a></li>
+                <li><a href="/Users/Index"><span class="glyphicon glyphicon-log-in">Login</span></a></li>
+                <li><a href="@Url.Action("LogOutAcount","Users")">LogOut</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="background"></div>-->
+    <!--<div style="width:100%"; height:50px; background-color:aquamarine;"></div>-->
+    <!--<div style-"display:flex;flex-direction:row">-->
+    <!--<div class="container">
+            <div class="navbar">
+                <img src="~/Content/images/gun.png" class="logo" />
+
+            </div>
+
+
+
+        </div>
+    </div>-->
+    <div>
+        <div id="div-containt">
+
+            @RenderBody()
+        </div>
+    </div>
+
+</body>
+</html>

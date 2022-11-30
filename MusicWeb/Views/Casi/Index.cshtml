@@ -1,0 +1,81 @@
+﻿@model IEnumerable<MusicWeb.Models.Artist>
+
+@{
+    ViewBag.Title = "Ca Sĩ";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/Content/UserStyle.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap5/bootstrap.css" rel="stylesheet" />
+
+}
+
+
+
+
+
+<div class="editTb1">
+    <h2>Danh sách ca sĩ</h2>
+    <div class="row">
+        @foreach (var pro in Model)
+        {
+            <div class="col-sm-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card-pro">
+                    <p>@Html.DisplayFor(model => pro.ArtistID)</p>
+                    <img src="@Url.Content(pro.Image_pro)" height="200" width="200" />
+                    <p>@Html.DisplayFor(model => pro.Name)</p>
+                    <p>@Html.DisplayFor(model => pro.Country)</p>
+                </div>
+                @if (pro.ArtistID == 1)
+                {
+                    <a href="/Song/Song1" class="btn btn-success">Nghe</a>
+                }
+                @if (pro.ArtistID == 2)
+                {
+                    <a href="/Song/Song2" class="btn btn-success">Nghe</a>
+                }
+                @if (pro.ArtistID == 3)
+                {
+                    <a href="/Song/Song3" class="btn btn-success">Nghe</a>
+                }
+                @if (pro.ArtistID == 4)
+                {
+                    <a href="/Song/Song4" class="btn btn-success">Nghe</a>
+                }
+                @if (pro.ArtistID == 5)
+                {
+                    <a href="/Song/Song5" class="btn btn-success">Nghe</a>
+                }
+                @if (pro.ArtistID == 6)
+                {
+                    <a href="/Song/Song6" class="btn btn-success">Nghe</a>
+                }
+                @if (pro.ArtistID == 7)
+                {
+                    <a href="/Song/Song7" class="btn btn-success">Nghe</a>
+                }
+                @if (pro.ArtistID == 8)
+                {
+                    <a href="/Song/Song8" class="btn btn-success">Nghe</a>
+                }
+                @if (pro.ArtistID == 9)
+                {
+                    <a href="/Song/Song9" class="btn btn-success">Nghe</a>
+                }
+                @if (pro.ArtistID == 10)
+                {
+                    <a href="/Song/Song10" class="btn btn-success">Nghe</a>
+                }
+            </div>
+        }
+    </div>
+    <div class="div-link">
+        <a href="/Song/SongPlaylist" class="btn btn-success">Chuyển qua danh sách nhạc</a>
+    </div>
+
+</div>
+   
+    
+
+ 

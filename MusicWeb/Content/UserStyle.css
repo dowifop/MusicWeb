@@ -1,0 +1,249 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*body {
+    width: 100%;
+    height: 100vh;*/
+    /*background-color: #131312;*/
+    /*font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+
+.banner {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(5, 94, 104);
+}
+
+    .banner h2 {
+        margin-left: 30px;
+        color: lightpink;
+    }
+
+    .banner .div-link a {
+        margin-left: 19%;
+        color: mediumpurple;
+    }
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: rgb(255, 215, 109);
+        text-transform: uppercase;
+    }
+
+
+/*.navbar ul li ::after{
+    content:'';
+    height:3px;
+    width:100%;*/
+/*background:#009688;*/
+/*position:absolute;
+    left:0;
+    bottom:-10px;
+    transition:0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}*/
+
+body {
+    margin: 0;
+    /*background-image:url('~/Content/images/phong nen.jpeg');*/
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#div-top {
+    height: 50px;
+    width: 100%;
+}
+
+#div-main {
+    width: auto;
+    margin-left: 1560px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.editlay {
+    width: 85%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    padding: 35px 0;
+    justify-content: space-between;
+}
+
+    .editlay ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+    }
+
+        .editlay ul li a {
+            text-decoration: none;
+            color: #b81212;
+            text-transform: uppercase;
+        }
+/*#div-container container-md img{
+    display:flex;
+    height:200px;
+    width:300px;
+}
+#div-container container-md h3{
+    display:inline-flex;
+}
+*/
+#div-left {
+    width: auto;
+    height: auto;
+    font-family: Arial;
+    font-size: small;
+}
+
+    #div-left h3 {
+        text-align: center;
+    }
+
+#div-containt {
+    width: auto;
+    height: 640px;
+    background-image: url(images/122.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-color: antiquewhite;*/
+}
+
+#div-footer {
+    height: 50px;
+    background-color: burlywood;
+    bottom: 0px;
+    text-align: center;
+    left: 50%;
+    padding-top: 25px;
+}
+
+    #div-footer p {
+        text-align: center;
+        left: 50%;
+        padding-top: 15px;
+    }
+
+.card-pro {
+    font-size: 20px;
+    color: #a124bd;
+    font-weight: 400;
+}
+
+    .card-pro img {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .card-pro p {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+.div-link {
+    font-size: 30px;
+    margin-left: 37%;
+}
+
+    .div-link a {
+        color: #d6a430;
+    }
+
+.editlay {
+    margin-left: 30%;
+}
+
+.editTb {
+    background-image: url(images/112.jpg);
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.editTb1 {
+    background-image: url(images/121.jpg);
+    background-size: cover;
+    width: auto;
+    height: 150vh;
+    background-repeat: no-repeat;
+}
+.editTb table {
+    margin-left: 40%;
+}
+
+
+.editTb a {
+    margin-left: 43%;
+}
+
+.editTb p {
+    margin-left: 42%;
+}
+/*#test .banner .editTb{
+    background-image: url(images/111.jpg);
+    background-size:contain;
+    width: auto;
+    height: 100vh;
+    background-repeat: no-repeat;
+}*/
+.div-link1 {
+    font-size: 50px;
+    margin-left: 43%;
+}
+
+    .div-link1 a {
+        color: black;
+    }
+.div-link2 {
+    font-size: 50px;
+    margin-right: 72%;
+}
+
+    .div-link2 a {
+        color: black;
+    }
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 50px;
+    font-size: 40px;
+}
+
+    .controls a {
+        color: black;
+    }

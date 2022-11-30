@@ -1,0 +1,47 @@
+﻿@model MusicWeb.Models.NguoiDung
+
+@{
+    ViewBag.Title = "NhapThongTin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/Content/bootstrap5/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/UserStyle.css" rel="stylesheet" />
+}
+
+<style>
+    .field-validation-error {
+        color: red;
+    }
+
+    #div-ds {
+        text-align: center;
+        height: 50px;
+        border-radius: 20px 20px 0 0;
+    }
+</style>
+<div id="div-ds">
+    <h2 sytle="padding-top:10px;color:white">Nhap thong tin</h2>
+</div>
+@using (Html.BeginForm("NhapThongTin", "Users", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="editTb">
+
+
+        <p>@Html.LabelFor(model => model.Name)</p>
+        <p>@Html.EditorFor(model => model.Name)</p>
+        <p>@Html.ValidationMessageFor(model => model.Name)</p>
+
+        <p>@Html.LabelFor(model => model.Country)</p>
+        <p>@Html.EditorFor(model => model.Country)</p>
+        <p>@Html.ValidationMessageFor(model => model.Country)</p>
+
+
+        <p><input type="submit" class="btn btn-success" value="Đăng kí" /></p>
+    </div>
+
+
+}
+
+

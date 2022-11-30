@@ -1,0 +1,84 @@
+﻿@model IEnumerable<MusicWeb.Models.Song>
+
+@{
+    ViewBag.Title = "Danh sách nhạc";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="~/Content/bootstrap5/bootstrap.css" rel="stylesheet" />
+}
+            <table class="table">
+                <tr>
+
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Duration)
+                    </th>
+                    <th></th>
+
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Duration)
+                        </td>
+                        <td>
+                            @if (item.SongID == 1)
+                            {
+                                @Html.ActionLink("Nhấn để nghe", "Song1", new { id = item.SongID })
+                            }
+                            @if (item.SongID == 2)
+                            {
+                                @Html.ActionLink( "Nhấn để nghe", "Song2", new { id = item.SongID })
+                            }
+                            @if (item.SongID == 3)
+                            {
+                                @Html.ActionLink("Nhấn để nghe", "Song3", new { id = item.SongID })
+                            }
+                            @if (item.SongID == 4)
+                            {
+                                @Html.ActionLink("Nhấn để nghe", "Song4", new { id = item.SongID })
+                            }
+                            @if (item.SongID == 5)
+                            {
+                                @Html.ActionLink("Nhấn để nghe", "Song5", new { id = item.SongID })
+                            }
+                            @if (item.SongID == 6)
+                            {
+                                @Html.ActionLink("Nhấn để nghe", "Song6", new { id = item.SongID })
+                            }
+                            @if (item.SongID == 7)
+                            {
+                                @Html.ActionLink("Nhấn để nghe", "Song7", new { id = item.SongID })
+                            }
+                            @if (item.SongID == 8)
+                            {
+                                @Html.ActionLink("Nhấn để nghe", "Song8", new { id = item.SongID })
+                            }
+                            @if (item.SongID == 9)
+                            {
+                                @Html.ActionLink("Nhấn để nghe", "Song9", new { id = item.SongID })
+                            }
+                            @if (item.SongID == 10)
+                            {
+                                @Html.ActionLink("Nhấn để nghe", "Song10", new { id = item.SongID })
+                            }
+                        </td>
+                    </tr>
+                }
+            </table>
+      
+
+
+
+

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/style.css" rel="stylesheet"/>
+</head>
+<body margin:0">
+    <div class="background"></div>
+         <div></div>
+    <!--<div style="width:100%"; height:50px; background-color:aquamarine;"></div>-->
+    <!--<div style-"display:flex;flex-direction:row">-->
+    <div id="div-top">
+    </div>
+    <div id="div-main">
+        
+        <div id="div-left">
+            <h3>NBTD ENTERTAINMENT</h3>
+            <ul style="list-style:none;">
+                <li><a href="Album">Album</a></li>
+                <li><a href="Playlist">Playlist</a></li>
+                <li><a href="Artists">Artists</a></li>
+                <li><a href="Users">Ca Nhan</a></li>
+            </ul>
+            
+        </div>
+        <div id="div-containt">
+            @RenderBody()
+            
+        </div>
+    </div>
+    <div id="div-footer"><p>Trường Đại Học Ngoại Ngữ - Tin học Tp.HCM</p></div>
+</body>
+</html>

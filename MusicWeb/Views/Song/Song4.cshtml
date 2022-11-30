@@ -1,0 +1,34 @@
+﻿@model MusicWeb.Models.Song
+
+@{
+    ViewBag.Title = "Bad Guy";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    }
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link href="~/Content/bootstrap5/bootstrap.css" rel="stylesheet" />
+<link href="~/Content/UserStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/app.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <div class="music">
+        <div class="music-thumb">
+            <img src="~/Content/images/cs4.jpg" alt="" />
+        </div>
+        <h3 class="music-name">Bad Guy</h3>
+
+        <div class="controls">
+            <a href="/Song/Song3" class="bx bxs-skip-previous-circle"></a>
+            <audio controls autoplay id="mySong">
+                <source src="~/Content/music/bg.mp3" />
+            </audio>
+            <a href="/Song/Song5" class="bx bxs-skip-next-circle"></a>
+        </div>>
+    </div>
+    
+
+

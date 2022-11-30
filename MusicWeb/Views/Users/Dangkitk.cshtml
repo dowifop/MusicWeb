@@ -1,0 +1,51 @@
+﻿@model MusicWeb.Models.Account
+
+@{
+    ViewBag.Title = "Dangkitk";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/Content/bootstrap5/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/UserStyle.css" rel="stylesheet" />
+}
+<style>
+    .field-validation-error {
+        color: red;
+    }
+
+    #div-ds {
+        text-align: center;
+        height: 50px;
+        border-radius: 20px 20px 0 0;
+    }
+</style>
+
+@using (Html.BeginForm("Dangkitk", "Users", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="editTb">
+        <div id="div-ds">
+            <h2 sytle="padding-top:10px;color:white">Đăng ký tài khoản</h2>
+        </div>
+        <p>@Html.LabelFor(model => model.AccountID)</p>
+        <p>@Html.EditorFor(model => model.AccountID)</p>
+        <p>
+            @Html.ValidationMessageFor(model => model.AccountID)
+        </p>
+
+        <p>@Html.LabelFor(model => model.Email)</p>
+        <p>@Html.EditorFor(model => model.Email)</p>
+        <p>@Html.ValidationMessageFor(model => model.Email)</p>
+
+        <p>@Html.LabelFor(model => model.PasswordAccount)</p>
+        <p>@Html.EditorFor(model => model.PasswordAccount)</p>
+        <p>@Html.ValidationMessageFor(model => model.PasswordAccount)</p>
+
+        <p>@Html.LabelFor(model => model.ConfirmPass)</p>
+        <p>@Html.EditorFor(model => model.ConfirmPass)</p>
+        <p>@Html.ValidationMessageFor(model => model.ConfirmPass)</p>
+        <p><input type="submit" class="btn btn-success" value="Đăng kí" /></p>
+    </div>
+
+
+}

@@ -1,0 +1,26 @@
+﻿@model MusicWeb.Models.Account
+
+@{
+    ViewBag.Title = "User";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<h2>Đăng kí tài khoản</h2>
+<style>
+    .field-validation-error {
+        color: red;
+    }
+</style>
+@using (Html.BeginForm("User", "Account", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+    @Html.LabelFor(m => m.Email)
+    @Html.TextBoxFor(m => m.Email)
+    @Html.ValidationMessageFor(m => m.Email)
+    <br />
+    @Html.LabelFor(m => m.AccountID)
+    @Html.TextBoxFor(m => m.AccountID)
+    @Html.ValidationMessageFor(m => m.AccountID)
+    <br />
+    <input type="submit" value="Đăng kí" />
+}
